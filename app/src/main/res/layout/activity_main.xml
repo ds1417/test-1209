@@ -13,13 +13,26 @@
     tools:context="com.example.daseul1.myapplication5.MainActivity"
     android:weightSum="1">
 
+    <TextView
+        android:text="reservation time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8" />
+
+    <Switch
+        android:text="Switch"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1" />
+
     <LinearLayout
+        android:id="@+id/linear1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="pizza(16000)"
+            android:text="adult(15000)"
             android:layout_width="wrap_content"
             android:layout_height="51dp"
             android:id="@+id/textView"
@@ -35,109 +48,116 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linear2"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:weightSum="1">
+        android:layout_height="48dp">
 
         <TextView
-            android:text="spaghetti(11000)"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="0.57" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText2"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:weightSum="1">
-
-        <TextView
-            android:text="salad(4000)"
-            android:layout_width="wrap_content"
+            android:text="child(8000)"
+            android:layout_width="match_parent"
             android:layout_height="35dp"
             android:id="@+id/textView3"
-            android:layout_weight="0.73" />
+            android:layout_weight="1" />
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText3"
-            android:layout_weight="0.00" />
+            android:layout_weight="1" />
 
+        <TextView
+            android:text="youth(12000원)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_weight="1" />
     </LinearLayout>
 
-    <CheckBox
-        android:text="membership"
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
-
-    <RadioGroup
-        android:id="@+id/RadioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:weightSum="1">
 
-        <RadioButton
-            android:text="pickle"
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="201dp"
+            android:layout_height="132dp"
+            android:weightSum="1"
+            android:layout_weight="0.56">
+
+            <RadioButton
+                android:text="basis discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton3"/>
+
+
+            <RadioButton
+                android:text="cash discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton4"/>
+
+            <RadioButton
+                android:text="membership discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="59dp"
+                app:srcCompat="@android:drawable/sym_def_app_icon"
+                android:id="@+id/imageView" />
+
+        </RadioGroup>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton3"/>
+            android:id="@+id/button"
+            android:text="reservation finish" />
 
-
-        <RadioButton
-            android:text="source"
-            android:layout_width="wrap_content"
+        <Button
+            android:text="Time"
+            android:layout_width="147dp"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton4"/>
+            android:id="@+id/button2" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            app:srcCompat="@android:drawable/sym_def_app_icon"
-            android:id="@+id/imageView" />
+        <TextView
+            android:text="num:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textColor="@color/colorPrimary" />
 
-    </RadioGroup>
+        <TextView
+            android:text="extended price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textColor="@color/colorAccent" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="order finish" />
-
-    <TextView
-        android:text="num:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:textColor="@color/colorPrimary" />
-
-    <TextView
-        android:text="price:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView6"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <TextView
-        android:text="choice:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:textColor="@color/colorAccent" />
+        <TextView
+            android:text="extended price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="@android:color/holo_green_dark" />
+    </LinearLayout>
 
 </LinearLayout>
